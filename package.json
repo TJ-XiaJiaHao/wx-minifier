@@ -1,6 +1,6 @@
 {
-  "name": "wxapp-minifier2",
-  "version": "1.0.0",
+  "name": "wx-code-minifier",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,6 @@
     "uglify-es": "^3.3.9"
   },
   "bin": {
-    "wxapp-minifier": "./index.js"
+    "wx-code-minifier": "./index.js"
   }
 }
