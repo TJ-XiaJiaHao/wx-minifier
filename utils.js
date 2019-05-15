@@ -79,12 +79,13 @@ function getDirFiles(dir) {
 
 // 根据路径分析文件名和目录路径
 const getFilePath = (filePath) => {
-  const patharr = filePath.split('/');
+  var isWin = /^win/.test(process.platform);
+  var splitChar = isWin ? '\\' : '/'
+  const patharr = filePath.split(splitChar);
   const filename = patharr.pop();
-  const dirname = patharr.join('/');
+  const dirname = patharr.join(splitChar);
   return { dirname, filename };
 }
-
 // 绿色字符串
 const chalkGreen = (str) => {
   return chalk.green(str);
