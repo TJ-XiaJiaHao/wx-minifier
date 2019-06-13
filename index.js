@@ -12,7 +12,7 @@ program
 	.option('-s, --src [path]', 'config code source')
 	.parse(process.argv);
 
-// 自定义配置
+// 默认配置 + 自定义配置
 let config = require('./config.js');
 const confPath = path.join(process.cwd(), 'wxmin.config.js');
 if (fs.existsSync(confPath)) {
